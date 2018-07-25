@@ -1,0 +1,19 @@
+{
+  "name": "pr-review",
+  "version": "0.0.1",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "author": "Yuren Ju <yurenju@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@octokit/rest": "^15.9.4",
+    "dotenv": "^6.0.0",
+    "install": "^0.12.1",
+    "isomorphic-fetch": "^2.2.1",
+    "npm": "^6.2.0",
+    "shelljs": "^0.8.2"
+  }
+}

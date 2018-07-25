@@ -1,0 +1,14 @@
+service: getamis-pr-review
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  pr:
+    handler: handler.pr
+    events:
+      - schedule: cron(0 2 ? * MON-FRI *)
+    environment:
+      SLACK_TEXT: ${env:SLACK_TEXT}
+      SLACK_WEBHOOK: ${env:SLACK_WEBHOOK}
+      GITHUB_TOKEN: ${env:GITHUB_TOKEN}
