@@ -13,7 +13,7 @@
     "dotenv": "^6.0.0",
     "install": "^0.12.1",
     "isomorphic-fetch": "^2.2.1",
-    "npm": "^6.2.0",
+    "npm": "^12.2.2",
     "shelljs": "^0.8.2"
   }
 }
